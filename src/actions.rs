@@ -19,6 +19,10 @@ pub fn printlist(){
     }
     let mut todos : Vec<&str> =  s.split('\n').collect();
     todos.remove(0);
+    if todos.len() as i32 == 0{
+        println!("The list is empty.Make some notes...");
+        return;
+    }
     let mut index = 1;
     println!("TODO LIST:");
     for i in todos{
@@ -83,6 +87,10 @@ pub fn remove_from_list(slno : i32){
     drop(file);
     if todos.len() as i32 <= (slno) || slno < 1{
         println!("Wrong number");
+        return;
+    }
+    if todos.len() as i32 <= 2 && slno == 1{
+        clean();
         return;
     }
     let mut removed = String::new();
