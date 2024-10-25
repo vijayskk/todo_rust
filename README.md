@@ -22,8 +22,8 @@ To compile and run this project, you need to have Rust installed. You can downlo
 Clone the repository and navigate to the project directory:
 
 ```bash
-git clone https://github.com/yourusername/todo_cli.git
-cd todo_cli
+git clone https://github.com/vijayskk/todo_rust.git
+cd todo_rust
 ```
 
 Then, build the project with Cargo:
@@ -35,7 +35,7 @@ cargo build --release
 To run the program directly, you can rename the output binary:
 
 ```bash
-mv target/release/todo_cli todo_rust
+mv target/release/todo_rust todo_rust
 ```
 
 ### Running the CLI
